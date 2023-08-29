@@ -10,4 +10,6 @@
 t = input().split()
 t = tuple(t[::-1])
 
-print(t)
+tupla = tuple([int(x) if x.isdigit() else x for x in t])
+
+print(tupla)
