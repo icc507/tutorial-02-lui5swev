@@ -17,7 +17,4 @@ m = input().split()
 t1 = tuple([int(x) if x.isdigit() else x for x in t])
 t2 = tuple([int(x) if x.isdigit() else x for x in m])
 
-print(t1)
-print(t2)
-
 print(t2+t1+t2)
