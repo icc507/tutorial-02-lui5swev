@@ -21,11 +21,13 @@ def insertaEnArbolTrinario(arbol, numero):
         insertaEnArbolTrinario(arbol[1], numero)
     elif numero == arbol[0]:
         insertaEnArbolTrinario(arbol[2], numero)
-    else:
+    elif numero > arbol[0]:
         insertaEnArbolTrinario(arbol[3], numero)
 
 
-lista = input().split()
+t = input().split()
+
+lista = tuple([int(x) if x.isdigit() else x for x in t])
 
 arbol = []
 
